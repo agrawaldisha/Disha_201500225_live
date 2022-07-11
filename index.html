@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">R</div>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#" id="red">Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Elements</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+    <div class="banner"></div>
+            <img src="img.png" alt="banner">
+        </div>
+        <a href="#"><div id="button">Buy Rogan--></div></a>
+    </section>
+    <footer>
+        <h1 id="name"></h1>
+        <h1 id="abc"></h1>
+        <h1 id="col"></h1>
+        <h1 id="date"></h1>
+    </footer>
+    <script>
+        document.getElementById("name").textContent="Disha Agrawal";
+        document.getElementById("abc").textContent="201500225";
+        document.getElementById("col").textContent="GLA University, Mathura";
+        window.onload=date;
+        function date(){
+            var d=new Date().toLocaleDateString();
+            var l=d.split("/");
+            var day=l[1] ,month=l[0],year=l[2];
+            var date=day+"-"+month+"-"+year;
+        document.getElementById("date").textContent=`${date}`;
+        }
+    </script>
+</body>
+</html>
